@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="false">
+    <meta name="MobileOptimized" content="0">
+    <title>MC666论坛</title>
+    <link rel="icon" href="./static/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <script type="text/javascript">
+		if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+			alert('喵，IE浏览器暂未适配\n如果用的是QQ浏览器等双核浏览器，请关闭Internet Explorer(IE)模式!');
+		}
+	</script>
+	<script>
+    let OriginTitile=document.title;
+    let titleTime;
+     document.addEventListener('visibilitychange',function(){
+        if(document.hidden){
+        document.title="喵∑(;°Д°),网页走丢了!";
+        clearTimeout(titleTime);
+        console.log('hide');
+        }else{
+        document.title='♡=•ㅅ＜=)喵,又好了'+OriginTitile;
+        console.log('show');
+        titleTime=setTimeout(function(){
+            document.title=OriginTitile;
+        },4000);
+        console.log('endChange=');
+       }
+    });
+	</script>
+</head>
+<div style="text-align:left;margin:5px;">    
+    <!-- 消息滚动 START -->
+    <!-- TODO::改为每五秒滚动一次的面板 -->
+  <marquee direction="up" height="40" onMouseOut="this.start()" onMouseOver="this.stop()" scrollAmount="1" scrollDelay="1">
+        <p align="center">
+            <span class="gonggao">公告：</span>2025年1月1日，服务器维护中，暂时无法进入</p>
+        <p align="center">更多请查看<b>服务器交流群</b>中消息</p>
+        <p align="center">
+          <span class="gonggao1">服务器交流群:</span><span class="gonggao2">1022888564</span></p>
+        <p align="center">ps：如网站出现乱码,请刷新后重试。</p>
+
+  </marquee>
+    <!-- 消息滚动 END -->
+
+    <!-- 群宣传 START -->
+<!--<p align="right">
+        <span class="STYLE1">
+            QQ群：<a target="_blank" href="#0">1022888564</a>								 
+        </span>
+    </p> -->
+    <!-- 群宣传 END -->
+    
+</div>
+<body>
+    <header>
+        <h1 class="name">MC666官网</h1>
+        <p class="text">Minecraft服务器</p>
+        <p class="tagline">纯净空间,极致生存</p>
+        <nav>
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="#0"><del>论坛</del></a></li>
+                <li><a href="./about/index.html">关于</a></li>
+                <li><a href="https://qm.qq.com/q/bIx8PNTzDa">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="team">
+        <div>
+            <h1><br>团队成员
+            </h1>
+        </div>
+        <img src="./static/image/1.png" alt="团队成员头像">
+        <div class="name"><br>アリス・トリスタ</div>
+    </section>
+    
+</body>
+<script>
+    function updateBusinessTime() {
+        const startTime = new Date('2025-02-13T00:00:00'); // 设置营业开始时间
+        const now = new Date();
+        const diff = now - startTime;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('business-time').textContent = `🏵🐥小站已运行:${days}天${hours}小时${minutes}分${seconds}秒🐥🏵`;
+    }
+
+    setInterval(updateBusinessTime, 1000); // 每秒更新一次
+    updateBusinessTime(); // 初始化时立即更新
+</script>
+<section class="blog">
+    <div class="container">
+        <h2></h2>
+        
+  <!--  <article class="jieshao">
+            <h3>服务器介绍</h3>
+            <p>服务器类型：<BR>服务器地址：<br>端口：</p>
+        <a href="post1.html">阅读更多</a>    
+        </article>  
+        <article class="post">
+            {% for post in posts %}
+            <h3>{{ post.title }}</h3>
+            <p>内容概括:{{ post.gaikuo }}</p>
+            <a href="{{ url_for('post', post_id=post.id) }}">阅读更多</a>
+            {% endfor %}
+        </article>-->
+        <article class="post">
+            <h3>服务器介绍</h3>
+            <p>服务器类型： <BR>服务器地址：<br>端口： </p>
+        </article>
+  
+</section>
+
+<footer style="text-align:center; margin-top:20px;">
+        <p><b>版权所有 © 2025 MC666 服务器QQ群:1022888564</b></p>
+        <section class="business-time">
+            <p id="business-time"></p>
+        </section>
+        <p><a href="https://ipw.cn/ssl/?site=ailisi6.us.kg" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a></p>
+        <p class="PB"><b>Powered by</b><a href="http://ailisi6.us.kg" title="MC666" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://img.shields.io/badge/MC666-8A2BE2"></a></p>
+        <!--🙂小站已运行:0天0小时0分0秒🙂-->
+</footer>
+</html>

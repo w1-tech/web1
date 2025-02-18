@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>MC666官网|Minecraft服务器</title>
+    <link rel="stylesheet" href="./about.css">
+    <link rel="icon" href="../static/image/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+		if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+			alert('喵，IE浏览器暂未适配\n如果用的是QQ浏览器等双核浏览器，请关闭Internet Explorer(IE)模式!');
+		}
+	</script>
+	<script>
+    let OriginTitile=document.title;
+    let titleTime;
+     document.addEventListener('visibilitychange',function(){
+        if(document.hidden){
+        document.title="喵∑(;°Д°),网页走丢了!";
+        clearTimeout(titleTime);
+        console.log('hide');
+        }else{
+        document.title='♡=•ㅅ＜=)喵,又好了'+OriginTitile;
+        console.log('show');
+        titleTime=setTimeout(function(){
+            document.title=OriginTitile;
+        },4000);
+        console.log('endChange=');
+       }
+    });
+	</script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2 class="title-ziti">MC666官网</h2>
+                <h3 class="left-content-ziti">Minecraft服务器</h3>
+                <p class="left-content-ziti1">纯净空间,极致生存</p>
+                <nav>
+                    <a href="http://ailisi6.us.kg" class="ll1">首页</a> |
+                    <a href="#forum" class="ll1">论坛</a> |
+                    <a href="./index.html" class="ll1">关于服务器</a> |
+                    <a href="https://qm.qq.com/q/bIx8PNTzDa" class="ll1">联系我们</a>
+                </nav>
+                <p class="ll2">团队成员</p>
+                <p class="ll3">アリス・トリスタ</p>
+            </div>
+            <div class="toc">
+                <h2>目录</h2>
+                <a href="#duan1" class="scroll-to">喵</a>|<br>
+                <a href="#duan2" class="scroll-to">论坛介绍</a>|<br>
+                <a href="#duan3" class="scroll-to">支持</a><br>
+                <a href="#contact" class="scroll-to">联系我们</a>|<br>
+                <a href="#team-introduction" class="scroll-to">团队介绍</a>|<br>
+                <a href="#server-introduction" class="scroll-to">服务器介绍</a>|<br>
+                <a href="#map-introduction" class="scroll-to">地图介绍</a>|<br>
+                <a href="#safe-introduction" class="scroll-to">安全性考虑</a>|<br>
+                <a href="#tcp-introduction" class="scroll-to">TCP（传输控制协议）</a>|<br>
+                <a href="#mapseek-introduction" class="scroll-to">关于基岩版地图收集与免费获取</a>|<br>
+                <a href="#why-introduction" class="scroll-to">为什么选择我们？</a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>欢迎来到MC666官网</h1>
+            <p><img src="./1.gif" alt="喵，你好呀！" style="max-width: 100%; height: auto;"></p>
+            <div id="duan1" class="section">
+                <h2>喵</h2>
+                <p><img src="./5.png" alt="喵，你好呀！" style="max-width: 10%; height: auto;"></p>
+            </div>
+
+            
+            <div id="duan2" class="section">
+                <h2>论坛介绍</h2>
+                <p>论坛论坛维护中，暂时无法访问</p>
+            </div>
+            <div id="duan3" class="section">
+                <h2>支持</h2>
+                <p>基岩版服务器：1.21.60</p>
+            </div>
+            <div id="contact" class="section">
+                <h2>联系我们</h2>
+                <p>QQ群:1022888564</p>
+            </div>
+            <div id="team-introduction" class="section">
+                <h2>团队介绍</h2>
+                <p>致力于收集一切和Minecraft有关的信息，欢迎各地中文Minecraft的玩家加入。</p>
+            </div>
+            <div id="server-introduction" class="section">
+                <h2>服务器介绍</h2>
+                <p>负载均衡：采用将请求分发到多个服务器，避免单点过载。<br>
+                    高可用性（HA）：通过冗余和故障转移机制确保服务持续可用。<br>
+                    防火墙：控制进出服务器的网络流量。<br>
+                    入侵检测系统（IDS）：监控和检测潜在的安全威胁。<br>
+                    数据加密：保护敏感数据，如SSL/TLS加密、磁盘加密。<br>
+                    定期更新和补丁管理：及时修复安全漏洞，确保系统安全。
+                </p>
+            </div>
+            <div id="map-introduction" class="section">
+                <h2>地图介绍</h2>
+                <p>这里是地图的详细介绍。</p>
+            </div>
+            <div id="safe-introduction" class="section">
+                <h2>安全性考虑</h2>
+                <p> 加密通信：确保数据传输安全。<br>
+                    
+                    访问控制：限制访问权限，防止未授权访问。<br>
+                    
+                    定期更新：及时更新工具和系统，修复漏洞。</p>
+            </div>
+            <div id="tcp-introduction" class="section">
+                <h2>TCP（传输控制协议）</h2>
+                <p><b>面向连接：</b>
+
+                    通信前需通过“三次握手”建立连接，通信结束后通过“四次挥手”断开连接。
+                    
+                    确保通信双方准备好数据传输。<br>
+                    
+                    <b>可靠性：</b>
+                    
+                    通过确认机制、重传机制、校验和等方式保证数据准确无误地传输。
+                    
+                    数据包丢失或损坏时会重传。<br>
+                    
+                    <b>字节流传输：</b>
+                    
+                    数据被视为无结构的字节流，应用程序需自行处理数据边界。<br>
+                    
+                    <b>流量控制：</b>
+                    
+                    通过滑动窗口机制控制发送速率，防止接收方缓冲区溢出。<br>
+                    
+                    <b>拥塞控制：</b>
+                    
+                    通过慢启动、拥塞避免、快重传和快恢复等算法避免网络拥塞</p>
+            </div>
+            <div id="mapseek-introduction" class="section">
+                <h2>关于基岩版地图收集与免费获取</h2>
+                <p><b>地图类型：</b><br>
+                    冒险地图|生存地图|解谜地图|小游戏地图|创造地图<br>
+                    <b>如何获取地图？</b><br>
+                        浏览地图库：通过分类或搜索找到你喜欢的地图。<br>
+                        
+                        下载地图文件：点击下载按钮，获取地图文件（通常为.mcworld或.zip格式）。<br>
+                        
+                        导入地图：将地图文件解压后导入到Minecraft地图目录中中。<br>
+                        
+                        开始游戏：进入游戏，享受全新的Minecraft体验！<br>
+                </p>
+                    
+            </div>
+            <div id="why-introduction" class="section">
+                <h2>为什么选择我们？</h2>
+                <p><b>完全免费：</b>所有地图资源免费提供，无隐藏收费。<br>
+                    <b>持续更新：</b>我们定期更新地图库，确保玩家总能找到新鲜内容。这里是地图的详细介绍。</p>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="ad">
+                <p><img src="2.png" alt="Hello Kitty® and Friends DLC" style="max-width: 100%; height: auto;"></p>
+            </div>
+            <div class="ad">
+                <p><img src="3.png" alt="Minecraft" style="max-width: 100%; height: auto;"></p>
+            </div>
+            <div class="ad">
+                <!--其他栏目-->
+                <p></p>
+            </div>
+            <div class="nr">
+                <p><b>版权所有 © 2025 MC666 服务器QQ群:1022888564</b></p>
+                <p><a href="https://ipw.cn/ssl/?site=ailisi6.us.kg" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a></p>
+                <p class="PB"><b>Powered by</b><a href="http://ailisi6.us.kg" title="MC666" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://img.shields.io/badge/MC666-8A2BE2"></a></p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        // 获取所有的导航链接
+        var links = document.querySelectorAll('.scroll-to');
+
+        // 为每个链接添加点击事件
+        links.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                // 阻止默认的链接跳转行为
+                event.preventDefault();
+                // 获取锚点位置
+                var targetId = this.getAttribute('href');
+                var targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // 平滑滚动到目标位置
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
+
+

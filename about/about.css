@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../static/image/1.jpg'); /* 页面背景为图片1.jpg */
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex; /* 使用flex布局 */
+    height: 100vh; /* 设置body高度为视口高度 */
+    overflow: hidden; /* 隐藏body的滚动条 */
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%; /* 设置container高度为100% */
+}
+.sidebar {
+    width: 200px;
+    background-color: #ffffff00;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed; /* 使用fixed定位 */
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.content {
+    flex: 5; /* 中间内容区域占三分之二 */
+    padding: 20px;
+    background-color: #09b6b669; /* 中间背景为浅蓝色 */
+    box-sizing: border-box;
+    margin-left: 220px; /* 确保内容不被侧边栏覆盖 */
+    height: 100vh; /* 设置content高度为视口高度 */
+    overflow-y: auto; /* 使content区域可以上下滚动 */
+}
+.content h1 {
+    color: #033333;
+}
+.title-ziti {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+}
+.left-content-ziti {
+    font-size: 0.875em; /* 字体大小 */
+    color: #01714c; /* 字体颜色 */
+}
+.left-content-ziti1 {
+    font-size: 0.870em; /* 字体大小 */
+    color: #0aaff5; /* 字体颜色 */
+}
+.ll1{
+    font-size: 0.875em; /* 字体大小 */
+    color: #01714c; /* 字体颜色 */
+}
+.ll2{
+    font-size: 1.000em; /* 字体大小 */
+    color: #a97721; /* 字体颜色 */
+}
+.ll3{
+    text-align: center;
+    font-size: 0.875em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+}
+.section {
+    margin-bottom: 30px;
+}
+.section h2 {
+    color: #000080; /* 深蓝色标题 */
+}
+.scroll-to {
+    cursor: pointer;
+    font-size: 0.880em; /* 字体大小 */
+    color: #023f2b; /* 字体颜色 */
+}
+.right-content {
+    flex: 1; /* 右侧区域占三分之一 */
+    background-color: #11e81f08;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: sticky; /* 使用sticky定位 */
+    top: 0;
+}
+.ad {
+    background-color: #06beec07;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #cccccc00;
+}
+.nr {
+    background-color: #baef0c48;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+footer {
+    margin-top: auto; /* 将页脚推到视口底部 */
+    width: 50%; /* 页脚宽度与视口宽度一致 */
+    text-align: center; /* 文本居中 */
+    padding: 1px 0; /* 上下填充 */
+    background-color: #0ea8ea3b; /* 页脚背景颜色 */
+    border-top: 1px solid #0a71e005; /* 上边框 */
+    font-size: 0.875em; /* 字体大小 */
+    color: #1b4502; /* 字体颜色 */
+}

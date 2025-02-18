@@ -1,0 +1,55 @@
+body {
+    background: url('../image/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0; /* 移除默认边距 */
+    padding: 0; /* 移除默认填充 */
+    display: flex; /* 使用弹性盒模型 */
+    flex-direction: column; /* 垂直排列子元素 */
+    align-items: center; /* 水平居中子元素 */
+    justify-content: center; /* 垂直居中子元素 */
+    min-height: 100vh; /* 设置最小高度为视口高度 */
+}
+.body h1 {
+    color: rgb(244, 9, 9);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.body div p {
+    color: rgb(244, 9, 9);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f8ab06;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #ffdb4d;
+}
+
+footer {
+    margin-top: 20px; /* 将页脚推到视口底部auto */
+    width: 100%; /* 页脚宽度与视口宽度一致 */
+    text-align: center; /* 文本居中 */
+    padding: 1px 0; /* 上下填充 */
+    background-color: #0d78cf; /* 页脚背景颜色 */
+    border-top: 1px solid #0a71e0; /* 上边框 */
+    font-size: 0.875em; /* 字体大小 */
+    color: aqua; /* 字体颜色 */
+  }

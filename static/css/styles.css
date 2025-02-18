@@ -1,0 +1,126 @@
+body {
+    background: url('../image/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0; /* 移除默认边距 */
+    padding: 0; /* 移除默认填充 */
+    display: flex; /* 使用弹性盒模型 */
+    flex-direction: column; /* 垂直排列子元素 */
+    align-items: center; /* 水平居中子元素 */
+    justify-content: center; /* 垂直居中子元素 */
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.name {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+}
+
+
+
+.team {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(244, 66, 6);
+}
+
+.team img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.team .name {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+}
+
+.text, .tagline {
+    text-align: center;
+    color: rgb(238, 18, 6);
+    font-weight: bold;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(252, 156, 3);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.gonggao1 {
+    color: red; 
+    font-weight: bold;
+}
+.gonggao2 {
+    color: blue; 
+    font-style: italic;
+}
+
+footer {
+    margin-top: auto; /* 将页脚推到视口底部 */
+    width: 100%; /* 页脚宽度与视口宽度一致 */
+    text-align: center; /* 文本居中 */
+    padding: 2px 0; /* 上下填充 */
+    background-color: #0ea8ea3b; /* 页脚背景颜色 */
+    border-top: 1px solid #0a71e005; /* 上边框 */
+    font-size: 0.875em; /* 字体大小 */
+    color: #1b4502; /* 字体颜色 */
+}
+.blog {
+    padding: 20px;
+    /* background：url('./image/1.jpg') no-repeat center center fixed;
+    background-color: #11efef;
+    background-size: cover;*/
+}
+.blog .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.blog .post {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ecc60c;
+    background-color: #e98307d5;
+}
+
+.PB {
+    color: rgb(155, 249, 14);
+}
