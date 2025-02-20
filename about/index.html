@@ -28,6 +28,19 @@
        }
     });
 	</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var iframe = document.createElement("iframe");
+            iframe.frameBorder = "no";
+            iframe.border = "0";
+            iframe.marginWidth = "0";
+            iframe.marginHeight = "0";
+            iframe.width = "330";
+            iframe.height = "86";
+            iframe.src = "http://music.163.com/outchain/player?type=2&id=2636155187&auto=1&height=66";
+            document.getElementById("music-player").appendChild(iframe);
+        });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -68,8 +81,10 @@
             <div id="duan1" class="section">
                 <h2>喵</h2>
                 <p><img src="./5.png" alt="喵，你好呀！" style="max-width: 10%; height: auto;"></p>
-                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=2610688831&auto=1&height=66"></iframe>
+                
             </div>
+            <div id="music-player"></div> <!-- 添加音乐播放器的容器 -->
+
             
             <div id="duan2" class="section">
                 <h2>论坛介绍</h2>
@@ -158,7 +173,7 @@
         </div>
         <div class="right-content">
             <div class="ad">
-                <p><img src="2.png" alt="Hello Kitty® and Friends DLC" style="max-width: 100%; height: auto;"></p>
+                <p href="http://biadu.com"><img src="2.png" alt="Hello Kitty® and Friends DLC" style="max-width: 100%; height: auto;"></p>
             </div>
             <div class="ad">
                 <p><img src="3.png" alt="Minecraft" style="max-width: 100%; height: auto;"></p>
@@ -169,8 +184,8 @@
             </div>
             <div class="nr">
                 <p><b>版权所有 © 2025 MC666 服务器QQ群:1022888564</b></p>
-                <p><a href="https://ipw.cn/ssl/?site=ailisi6.us.kg" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a></p>
-                <p class="PB"><b>Powered by</b><a href="http://ailisi6.us.kg" title="MC666" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://img.shields.io/badge/MC666-8A2BE2"></a></p>
+                <p><a href="https://ipw.cn/ssl/?site=ailisi6.us.kg" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="SSL" src="https://static.ipw.cn/icon/ssl-s1.svg"></a></p>
+                <p class="PB"><b>Powered by</b><a href="http://ailisi6.us.kg" title="MC666" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="MC666" src="https://img.shields.io/badge/MC666-8A2BE2"></a></p>
             </div>
         </div>
     </div>
